@@ -7,6 +7,14 @@ const setup = () => {
     return {
       select: () => ({
         from: () => [],
+        where: () => ({
+          from: () => [],
+        }),
+      }),
+      insert: () => ({
+        values: () => ({
+          returning: () => [],
+        }),
       }),
     };
   }
